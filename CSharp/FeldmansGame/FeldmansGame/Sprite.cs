@@ -14,6 +14,7 @@ namespace Mainframe.Animations
     /// </summary>
     public class Sprite
     {
+	
         protected int[] columnHeights;
         protected Texture2D spriteSheet;
         protected Vector2 spriteSize;
