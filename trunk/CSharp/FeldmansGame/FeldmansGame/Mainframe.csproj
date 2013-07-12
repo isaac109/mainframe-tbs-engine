@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{48E65C3D-D26F-4E91-B465-E487939E7FB0}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mainframe</RootNamespace>
+    <AssemblyName>Mainframe</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>6fd51ba2-0b72-49ef-8953-3d1ddf453fed</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\XNA\Mainframe\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <TargetCulture>en-US</TargetCulture>
+    <ProductName>Mainframe Editor</ProductName>
+    <PublisherName>Panther Games</PublisherName>
+    <SuiteName>Mainframe Engine</SuiteName>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A5B7367BBD045B85011321AFD7A60450CD2C5C5D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FeldmansGame_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\Character\ActorTextureHolder.cs" />
+    <Compile Include="Animations\Combat\CombatTextureHolder.cs" />
+    <Compile Include="Animations\ContentImportationGame.cs" />
+    <Compile Include="Animations\Environment\EnvironmentTextureHolder.cs" />
+    <Compile Include="Animations\Interface\InterfaceTextureHolder.cs" />
+    <Compile Include="Animations\Sprite.cs" />
+    <Compile Include="Animations\TextureXML.cs" />
+    <Compile Include="Constants\ConstantHolder.cs" />
+    <Compile Include="Constants\Editor\EditorConstantHolder.cs" />
+    <Compile Include="Core\Combat\Ability.cs" />
+    <Compile Include="Core\Combat\InstantEffect.cs" />
+    <Compile Include="Core\Combat\CombatData.cs" />
+    <Compile Include="Core\Combat\Projectile.cs" />
+    <Compile Include="Core\Combat\SpaceProjectile.cs" />
+    <Compile Include="Core\Combat\StraightProjectile.cs" />
+    <Compile Include="Core\Controls.cs" />
+    <Compile Include="Core\MainframeLevelEditor.cs" />
+    <Compile Include="Core\SimpleGrid.cs" />
+    <Compile Include="Core\SimpleGridSpace.cs" />
+    <Compile Include="Core\Units\Actor.cs" />
+    <Compile Include="Core\Combat\AbilityEffect.cs" />
+    <Compile Include="Core\Units\Hero.cs" />
+    <Compile Include="Core\Grid.cs" />
+    <Compile Include="Core\GridSpace.cs" />
+    <Compile Include="Core\Units\Person.cs" />
+    <Compile Include="Core\Units\Team.cs" />
+    <Compile Include="Core\Units\Wall.cs" />
+    <Compile Include="Forms\AbilityEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AbilityEditor.Designer.cs">
+      <DependentUpon>AbilityEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContentImportationMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContentImportationMenu.Designer.cs">
+      <DependentUpon>ContentImportationMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Create New Level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Create New Level.Designer.cs">
+      <DependentUpon>Create New Level.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainDeveloperMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainDeveloperMenu.Designer.cs">
+      <DependentUpon>MainDeveloperMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Button.cs" />
+    <Compile Include="GUI\OptionsBox.cs" />
+    <Compile Include="GUI\GUIManager.cs" />
+    <Compile Include="GUI\CharacterBox.cs" />
+    <Compile Include="GUI\TextBox.cs" />
+    <Compile Include="GUI\TextButton.cs" />
+    <Compile Include="Forms\Mainframe Level Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mainframe Level Editor.Designer.cs">
+      <DependentUpon>Mainframe Level Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Saving\Level.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Core\MainframeGame.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Conventions.txt" />
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\SpecialSpaces\" />
+    <Folder Include="Core\Units\Heroes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FeldmansGameContent\MainframeContent.contentproj">
+      <Project>{E94867F2-5219-4527-B2D0-B256E22B11FF}</Project>
+      <Name>MainframeContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeldmansGame_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AbilityEditor.resx">
+      <DependentUpon>AbilityEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContentImportationMenu.resx">
+      <DependentUpon>ContentImportationMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Create New Level.resx">
+      <DependentUpon>Create New Level.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainDeveloperMenu.resx">
+      <DependentUpon>MainDeveloperMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mainframe Level Editor.resx">
+      <DependentUpon>Mainframe Level Editor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
